@@ -1,4 +1,4 @@
-from message3 import message3
+from message3 import message3 # imports the function called message3, from the file named message3
 
 choice = str(input("Choose from the list :\
 \n [1] Hypernatremia\
