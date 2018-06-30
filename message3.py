@@ -1,9 +1,11 @@
 def message3():
-    print("Welcome to PyScript for Automated Calculation")
-    print("Author: Visnu Pritom Chowdhury")
-    print("e-mail: pr3370m@gmail.com \n")
-    print("+--------------------------------------+")
-    print("| BETA PHASE | PLEASE USE WITH CAUTION |")
-    print("+--------------------------------------+\n")
+    print("====================================")
+    #print("Welcome to PyScript for Automated Calculation")
+    print(" |----- Welcome to auto-calc -----| ")
+    #print("Author: Visnu Pritom Chowdhury")
+    print(" |--- email: pr3370m@gmail.com ---| ")
+    print(" +--------------------------------+ ")
+    print(" | BETA PHASE | USE WITH CAUTION. | ")
+    print("====================================\n")
 
 message3()
