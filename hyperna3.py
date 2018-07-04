@@ -1,17 +1,28 @@
 from message3 import message3
 
 def hyperna_msg3():
-    print("Sodium contents: ")
-    print(" G-ORS : 75 mmol/l ")
-    print(" 1/2 NS: 77 mmol/l")
-    print(" 1/2 AC: 66 mmol/l \n")
+    print("Sodium content in fluids: ")
+    print("+-------------------+")
+    print("| G-ORS : 75 mmol/l |")
+    print("| 1/2 NS: 77 mmol/l |")
+    print("| 1/2 AC: 66 mmol/l |")
+    print("+-------------------+\n")
 
 def hyperna_calc3():
-    print("FLUID VOLUME CALCULATION")
+    print("FLUID VOLUME CALCULATION:")
     wt = float(input(" Weight (kg): "))
     serum = input(" Serum Sodium (mmol/l): ")
-    fluid = input(" Fluid Sodium (mmol/l): ")
-
+    fluid = int(input(" Fluid choice\
+\n (1) G-ORS\
+\n (2) 1/2 NS\
+\n (3) 1/2 Acetate\
+\nEnter code: "))
+    if fluid == 1:
+        fluid = 75
+    elif fluid == 2:
+        fluid = 77
+    elif fluid == 3:
+        fluid = 66
     corr = ((10/((float(serum)-float(fluid))/((float(wt)*0.6)+1)))*1000)/24
     print("\nCorrection volume:", round(corr, 2), "ml/hr\n")
 
