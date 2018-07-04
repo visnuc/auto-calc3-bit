@@ -28,5 +28,12 @@ def diet3():
         print("Please try again.")
     print("\nVolume :", round(t_vol, 2), "ml/kg/day")
     print("Calorie:", round(t_cal, 2), "kcal/kg/day \n")
+    ques = str(input("Want to do anything else? (y/n): "))
+    if ques == "y" or ques == "Y":
+        from main3 import main3
+    else:
+        print("Thanks for using auto-calc!")
+        exit()
+        
 
 diet3()
