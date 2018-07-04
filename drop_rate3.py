@@ -24,5 +24,11 @@ def drop_rate3():
     elif drop_fac == "3":
         print("\nAt", int(dpm), "drops/min", round(vol, 2), "ml IV will take ~", int(hr), "hrs")
         print("Drop factor : 1 ml =", inf_set, "microdrops\n")
+    ques = str(input("Want to do anything else? (y/n): "))
+    if ques == "y" or ques == "Y":
+        from main3 import main3
+    else:
+        print("Thanks for using auto-calc!")
+        exit()
 
 drop_rate3()
