@@ -18,5 +18,11 @@ def sevsepsis3():
         print("Bolus 2:", round(bolus, 2), "ml in 30 min (HS/NS),", "If MAP <50")
         print("Bolus 3:", round(bolus, 2), "ml in 30 min (HS/NS),", "If MAP <50")
         print("START Ionotropes, monitor BP every 15 min\n")
+    ques = str(input("Want to do anything else? (y/n): "))
+    if ques == "y" or ques == "Y":
+        from main3 import main3
+    else:
+        print("Thanks for using auto-calc!")
+        exit()
 
 sevsepsis3()
