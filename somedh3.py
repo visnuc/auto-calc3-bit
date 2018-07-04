@@ -10,6 +10,12 @@ then\n", round(wt*5, 2), "ml/hr for 8-10 hrs (GORS)\n")
     print("\n", round(wt*75, 2), "ml over 4-6 hrs (GORS)\n")
   else:
     print(" \nPlease try again.")
+  ques = str(input("Want to do anything else? (y/n): "))
+  if ques == "y" or ques == "Y":
+    from main3 import main3
+  else:
+    print("Thanks for using auto-calc!")
+    exit()
 
 somedh3()
 #input("Press `Enter' to exit.")
