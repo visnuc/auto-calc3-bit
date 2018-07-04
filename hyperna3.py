@@ -22,6 +22,12 @@ def hyperna_calc3():
     elif kwash == "2":
         curt = (wt*9)*0.75
     print("\nCurtailed diet:", round(curt, 2), "ml/2h + Salt added.")
+    ques = str(input("Want to do anything else? (y/n): "))
+    if ques == "y" or ques == "Y":
+        from main3 import main3
+    else:
+        print("Thanks for using auto-calc!")
+        exit()
 
 hyperna_msg3()
 hyperna_calc3()
