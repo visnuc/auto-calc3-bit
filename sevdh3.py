@@ -21,7 +21,7 @@ def sevdh3():
                   round(wt*10, 2), "ml oral (GORS)")
             print("3rd, 4th hr:", round(wt*10, 2), "ml/hr (GORS)")
             print("Next 8-10 hrs:", round(wt*5, 2), "ml/hr (GORS), \
-till correction")
+till correction\n")
         elif age >= 0.16666:
             print("\n1st hr:", round(wt*20, 2), "ml IV only (AC +5% Dex +7 KCL)")
             print("2nd hr:", round(wt*10, 2), "ml IV (AC +5% Dex +7 KCL) +", \
@@ -44,5 +44,11 @@ till correction\n")
             print(round(wt*70, 2), "ml in 2.5 hrs (AC/NS)\n")
     else:
         print("Please restart the application.")
+    ques = str(input("Want to do anything else? (y/n): "))
+    if ques == "y" or ques == "Y":
+        from main3 import main3
+    else:
+        print("Thanks for using auto-calc!")
+        exit()
 
 sevdh3()
