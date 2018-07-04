@@ -5,10 +5,9 @@ choice = str(input("Choose your module: \
 \n [1] Hypernatremia\
 \n [2] Fluid \
 \n [3] MAP \
-\n [4] Diet calorie\
+\n [4] Diet\
 \n [5] Drops/min\
 \nEnter the code [1-5]: "))
-
 if choice == "1":
     from hyperna3 import hyperna_msg3
     from hyperna3 import hyperna_calc3
