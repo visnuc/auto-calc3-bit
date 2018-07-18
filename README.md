@@ -1,4 +1,4 @@
-# auto-calc3
+# auto-calc3-bit
 
 **version 1.0.7**
 
