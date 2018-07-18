@@ -1,4 +1,4 @@
-# auto_calc3
+# auto-calc3
 
 **version 1.0.7**
 
